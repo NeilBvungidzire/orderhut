@@ -15,7 +15,10 @@ const BASE_API_URL = process.env.BASE_API_URL;
 
 const config = {
   mode: "production",
-  output: { path: path.resolve(__dirname + "/dist"), filename: "[name].js" },
+  output: {
+    path: path.resolve(CURRENT_WORKING_DIR + "/dist"),
+    filename: "[name].js",
+  },
   module: {
     rules: [
       {
